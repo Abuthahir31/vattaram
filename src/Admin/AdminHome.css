@@ -1,0 +1,76 @@
+.admin-home-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.admin-home-content {
+  padding: 7rem;
+}
+
+.admin-hero {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.admin-option-card {
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.admin-option-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.option-icon {
+  font-size: 3rem;
+}
+
+/* Mobile specific styles */
+@media (max-width: 768px) {
+  .admin-home-content {
+    padding: 3.5rem;
+  }
+  
+  .admin-hero {
+    padding: 1.5rem;
+  }
+  
+  .admin-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .option-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-home-content {
+    padding: 1.75rem;
+  }
+  
+  .admin-hero {
+    padding: 1rem;
+  }
+  
+  .admin-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .option-icon {
+    font-size: 2rem;
+  }
+}

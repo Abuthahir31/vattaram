@@ -1,0 +1,147 @@
+.orders-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.order-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.order-card .card-body {
+  padding: 1.25rem;
+}
+
+.order-items-container {
+  margin-top: 20px;
+}
+
+.order-items-container .card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.shipping-info {
+  border-left: 3px solid #0d6efd;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.orders-list {
+  margin-bottom: 30px;
+}
+.badge-pill {
+  padding: 5px 10px;
+  font-weight: 500;
+}
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.pagination .page-link {
+  color: #0d6efd;
+}
+.empty-state-card {
+  margin-top: 30px;
+  border: 1px dashed #dee2e6;
+}
+
+.empty-state-card .card-body {
+  padding: 40px 20px;
+}
+@media (max-width: 992px) {
+  .order-card .card-body {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .orders-page-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .order-card .col-md-6 {
+    margin-bottom: 1rem;
+  }
+  
+  .d-flex.justify-content-between.align-items-center.mb-4 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .d-flex.justify-content-between.align-items-center.mb-4 > * {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .order-card .col-6, 
+  .order-card .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .order-card .text-md-end {
+    text-align: left !important;
+  }
+  
+  .order-card .card-body {
+    padding: 0.75rem;
+  }
+  
+  .shipping-info {
+    margin-top: 15px;
+  }
+  .order-card .row > [class^="col-"] {
+    margin-bottom: 0.5rem;
+  }
+  
+  .order-card .btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.fa {
+  margin-right: 5px;
+}
+.btn-outline-primary {
+  border-width: 1px;
+}
+.dropdown-toggle::after {
+  margin-left: 0.5em;
+}
+.alert {
+  margin: 20px auto;
+  max-width: 800px;
+}
