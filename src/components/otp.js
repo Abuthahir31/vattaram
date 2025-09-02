@@ -9,7 +9,7 @@ const OTPLogin = () => {
 
   const handleSendOTP = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/api/send-otp', { phone });
+      const res = await axios.post('https://vattaram-backend.onrender.com/api/send-otp', { phone });
       setMessage(res.data.message);
       setStep(2);
     } catch (err) {
@@ -19,7 +19,7 @@ const OTPLogin = () => {
 
   const handleVerifyOTP = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/api/verify-otp', { phone, otp });
+      const res = await axios.post('https://vattaram-backend.onrender.com/api/verify-otp', { phone, otp });
       setMessage(res.data.message);
       // Redirect to dashboard or login success
     } catch (err) {
